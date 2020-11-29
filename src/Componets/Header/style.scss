@@ -1,0 +1,125 @@
+html{
+    z-index: -1;
+}
+
+header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    //background: linear-gradient(113deg, rgba(10,19,18,1) 0%, rgba(10,24,23,1) 37%, rgba(10,19,18,1) 62%);
+
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    z-index: 99;
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 390px;
+            margin-left: 72px;
+
+
+                a{
+                    text-decoration: none;
+                    font-weight: 400;
+                    color: #e1e1e6;
+                    font-size: 18px;
+                    font-family: 'Roboto',sans-serif;
+                    transition: all ease 0.2s;
+                    &:hover{
+                        color: #28df99;
+                        
+                    }
+            
+                    
+                }
+            
+            
+    
+        }
+
+    
+        .menuButton{
+            display: none;
+            width: 31px;
+            cursor: pointer;
+    
+            .icon{
+                width: 25px;
+                height: 25px;
+            }
+        }
+    
+        @media(max-width: 425px){
+            justify-content: flex-end;
+            padding: 0;
+            display: fixed;
+    
+            .active{
+                left: 0%;
+                overflow: hidden;
+                position: fixed;
+            }
+    
+    
+            ul {
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                width: 100vw;
+                height: 100vh;
+                padding: 71px;
+                background: linear-gradient(0deg, rgba(40,223,153,1) 0%, rgba(34,116,85,1) 37%, rgba(33,80,62,1) 62%);
+                top: 0;
+                left: 100%;
+                transition: all ease 0.8s;
+                z-index: 999;
+                margin-left: 0;
+                
+                a{
+                    font-size: 22px;
+    
+                }
+           
+            }
+    
+            .menuButton{
+                display: block;
+                position: fixed;
+                top: 11px;
+                right: 14px;
+                
+            
+            }
+        }
+    }
+    
+    .button-group{
+        width: 100px;
+        height: 25px;
+        display: flex;
+        justify-content: space-around;
+
+        button{
+            width: 45%;
+            background-color: #28df99;
+            border: none;
+            border-radius: 3px;
+            font-family: 'Roboto';
+            cursor: pointer;
+
+            @media(max-width: 768px){
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+    
+    
+    ::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+    }
+
+    ::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+
+    ::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background:#28df99;
+        border: 0 #fff;
+        border-radius: 100px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #b3b3b3;
+        border: 0 #fff;
+        border-radius: 100px;
+    }

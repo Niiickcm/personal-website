@@ -1,0 +1,48 @@
+.title-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top: 55px;
+ 
+}
+
+.title-content{
+    width: 545px;
+    
+    h1{
+        font-weight:700;
+        font-size: 60px;
+        color: #e1e1e6;
+    }
+
+    h2{
+        font-size: 34px;
+        font-weight: 300;
+        color: #28df99;
+        
+    }
+
+    @media(max-width: 500px){
+        h1{
+            font-size: 47px;
+        }
+        h2{
+            font-size: 26px;
+        }
+    }
+
+    @media(max-width: 325px){
+        
+            width: 91%;
+        
+        h1{
+            font-size: 39px;
+        }
+        h2{
+            font-size: 23px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.container-icons{
+    position: relative;
+    width: 100%;
+    height: 26%;
+    margin-top: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.content-icons{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    img{
+        width: 33%;
+    }
+
+    .arrow-left{
+        margin-right: -36px;
+    }
+
+    
+}
